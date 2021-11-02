@@ -3,44 +3,6 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "Bf,^`ou`S(_p9Oh#JQkD":
-            case "Kirby":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. f f f f . . . . . . f f f f . 
-. f 3 3 3 f f f f f f 3 3 3 f . 
-. f 3 3 f f 3 3 3 3 3 3 3 3 f . 
-. f 3 f f 3 1 3 3 3 1 3 3 3 f . 
-. f 3 f 3 3 1 3 3 3 1 3 3 f f . 
-. . f 3 3 3 f 3 f 3 f f f f . . 
-. . f f f 3 f 3 f 3 f f 2 2 f . 
-. . f 2 2 f f 3 f 3 f 2 2 2 f . 
-. . f 2 2 2 f 3 f 3 f 2 2 2 f . 
-. . f 2 2 2 f 3 3 f 2 2 2 2 f . 
-. . f 2 2 2 2 f 3 f 2 2 2 f . . 
-. . . f 2 2 2 f f f 2 2 f f . . 
-. . . f f f f . . . f f . . . . 
-. . . . . . . . . . . . . . . . 
-`;
-            case "?TDA@PrftG{^6,8GWjf|":
-            case "Waddle doo":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . f f f . . . f f f . . . 
-. . . . f 5 f f . . f 2 f f . . 
-. f f f f 5 5 f f f 2 2 2 f . . 
-. f 5 5 f 5 5 f 2 2 2 2 f f . . 
-. f 5 5 f f f f 1 2 2 2 f . . . 
-. f 5 5 f 1 1 f 1 1 2 f . . . . 
-. f f f 2 1 f f f 1 2 f . . . . 
-. f 9 9 9 1 1 f 1 1 2 f . . . . 
-. . f 2 9 9 1 1 1 2 2 f . . . . 
-. . f 2 2 2 2 2 2 2 f f . . . . 
-. . f 2 2 f f f f f f . . . . . 
-. . f f f . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
             case "b9|X90NL}GsL%!;)krf,":
             case "Background":return img`
 fffffffff999999999999999999999999999999999999999999999999999999999999999999999fffffffffffff111111111111111111111111111111111111111111111111111111111ffffffffff88
@@ -202,20 +164,58 @@ fffffffffffffffeeefffffffffffffffffff77ffffffff666666676666677777766666677766666
 . f f f f f . . . . f f f f f . 
 . . . . . . . . . . . . . . . . 
 `;
+            case "Bf,^`ou`S(_p9Oh#JQkD":
+            case "Kirby":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. f f f f . . . . . . f f f f . 
+. f 3 b b f f f f f f 3 3 3 f . 
+. f b b f f b 3 3 3 3 3 3 3 f . 
+. f b f f b 1 3 3 3 1 3 3 3 f . 
+. f b f b b 1 3 3 3 1 3 3 f f . 
+. . f b b 3 f 3 f 3 f f f f . . 
+. . f f f b f 3 f 3 f f 4 4 f . 
+. . f 4 2 f f b f 3 f 4 2 2 f . 
+. . f 4 2 2 f b f 3 f 4 2 2 f . 
+. . f 4 2 2 f b 3 f 4 2 2 2 f . 
+. . f 4 2 2 2 f b f 4 2 2 f . . 
+. . . f 4 4 2 f f f 4 2 f f . . 
+. . . f f f f . . . f f . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "?TDA@PrftG{^6,8GWjf|":
+            case "Waddle doo":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . f f f . . . f f f . . . 
+. . . . f 4 f f . . f 4 f f . . 
+. f f f f 5 5 f f f 4 2 2 f . . 
+. f 4 5 f 5 5 f 4 4 2 2 f f . . 
+. f 4 5 f f f f d 2 2 2 f . . . 
+. f 4 5 f d 1 f 1 1 2 f . . . . 
+. f f f 4 d f f f 1 2 f . . . . 
+. f 6 6 9 d 1 f 1 1 2 f . . . . 
+. . f 4 6 9 1 1 1 2 2 f . . . . 
+. . f 4 2 2 2 2 2 2 f f . . . . 
+. . f 4 2 f f f f f f . . . . . 
+. . f f f . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
             case "PzCZxhX(P;{h1sq%@n`D":
             case "Blob":return img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . 1 1 . 
 . . . . . . . . 1 1 . . 1 . . . 
 . . . . f f f 1 1 . . 1 . . . . 
-. . f f 1 1 1 1 f 1 1 . . . 1 . 
-. . f 1 1 1 1 1 1 1 f 1 1 1 1 . 
-. . f 1 1 1 f f 1 1 1 1 1 . . . 
-. . f 1 f 1 1 1 1 1 1 1 . . . . 
-. . f 1 f 1 f f f 1 1 1 . . . . 
-. . f 1 1 1 f 1 1 1 1 f . . . . 
-. . . f f 1 f 1 1 1 1 f . . . . 
-. . . . f 1 1 1 1 1 f f . . . . 
+. . f f d 1 1 1 f 1 1 . . . 1 . 
+. . f d d 1 1 1 1 1 f 1 1 1 1 . 
+. . f d 1 1 f f 1 1 1 1 1 . . . 
+. . f d f 1 1 1 1 1 1 1 . . . . 
+. . f d f 1 f f f 1 1 1 . . . . 
+. . f d d 1 f 1 1 1 1 f . . . . 
+. . . f f d f 1 1 1 d f . . . . 
+. . . . f d d d d d f f . . . . 
 . . . . . f f f f f f . . . . . 
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -225,19 +225,19 @@ fffffffffffffffeeefffffffffffffffffff77ffffffff666666676666677777766666677766666
             case "Waddle dee":return img`
 f f 1 f . . . . . . . . . . . . 
 f 1 1 f f . . . f f f . f f f f 
-f 1 f 1 f f f f 2 2 f . f 1 1 f 
-f 1 f 1 f 2 2 2 f f f f f 1 1 f 
-f 1 1 f f f f f d d f f f f 2 2 
-. f f 2 2 f d d d d d d f f f f 
-f 2 2 2 f d f 1 d d f 1 f 2 2 2 
-f 2 2 2 f d f 1 d d f 1 d f 2 2 
-2 f f f f d f f d d f f f f f f 
-2 f f f f d d d d d d f 5 5 f 2 
-2 f 5 5 f f d d d d f 5 5 5 f 2 
-2 f 5 5 f f d d d d f 5 5 5 f . 
-2 f f 5 5 f f f f f f 5 5 5 f . 
-2 . f f 5 5 f f f f f 5 5 f . . 
-. . . f 5 5 f . . . f 5 f f . . 
+f 1 f 1 f f f f 4 4 f . f 1 1 f 
+f 1 f 1 f 4 4 4 f f f f f 1 1 f 
+f 1 1 f f f f f 1 1 f f f f 2 2 
+. f f 4 4 f 1 1 1 d d d f f f f 
+f 4 4 2 f 1 f 1 d d f 1 f 2 2 2 
+f 4 2 2 f 1 f 1 d d f 1 d f 2 2 
+2 f f f f 1 f f d d f f f f f f 
+2 f f f f 1 d d d d d f 4 4 f 2 
+2 f 4 4 f f d d d d f 4 4 5 f 2 
+2 f 4 5 f f d d d d f 4 5 5 f . 
+2 f f 5 5 f f f f f f 4 5 5 f . 
+2 . f f 5 5 f f f f f 4 5 f . . 
+. . . f 5 5 f . . . f 4 f f . . 
 . . . . f f f . . . f f . . . . 
 `;
         }
