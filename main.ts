@@ -1,5 +1,5 @@
 sprites.onCreated(SpriteKind.Enemy, function (sprite) {
-    sprite.setVelocity(-50, 50)
+    sprite.setVelocity(-100, 0)
     sprite.setFlag(SpriteFlag.AutoDestroy, true)
     if (Math.percentChance(50)) {
         sprite.setImage(img`
@@ -61,13 +61,21 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         . . . . . . . . . . . . . . . . 
         `, mySprite, 50, 0)
 })
+info.onLifeZero(function () {
+    game.over(false)
+    game.splash(info.highScore(), info.score())
+    info.setLife(3)
+    info.setScore(0)
+})
 sprites.onOverlap(SpriteKind.Projectile, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
     info.changeScoreBy(1)
-    sprite.startEffect(effects.confetti)
+    sprite.destroy()
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     otherSprite.destroy()
+    info.changeLifeBy(-1)
+    otherSprite.startEffect(effects.bubbles)
 })
 let enemy_sprite: Sprite = null
 let projectile: Sprite = null
@@ -92,6 +100,7 @@ mySprite = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
+info.setLife(3)
 scene.setBackgroundImage(img`
     fffffffff999999999999999999999999999999999999999999999999999999999999999999999fffffffffffff111111111111111111111111111111111111111111111111111111111ffffffffff88
     fffffffff9999999999999999999999999999999999999999999999999999999999999999999fffffffffffffff111111111111111111111111111111111111111111111111111111111ffffffffff88
