@@ -34,6 +34,11 @@
         "mimeType": "image/x-mkcd-f4",
         "displayName": "Waddle dee"
     },
+    "image1": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAA//8AAAAAAABP9P8AAAAAICJE9A8AAAAg8CJE/wAAAAL/L0L0AAAAESIiIvQAAAAgIiIi9AAAACL/IiL0AAAAACAiIvQAAAAAIiD/9AAAACACIgD/AAAAICACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "displayName": "heart"
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
