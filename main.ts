@@ -8,7 +8,7 @@ sprites.onCreated(SpriteKind.Enemy, function (sprite) {
     }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    projectile = sprites.createProjectileFromSprite(assets.image`Waddle doo`, mySprite, 50, 0)
+    projectile = sprites.createProjectileFromSprite(assets.image`Waddle doo`, mySprite, 100, 50)
 })
 info.onLifeZero(function () {
     game.over(false)
@@ -40,6 +40,9 @@ for (let index = 0; index <= 10; index++) {
     mySprite2.setPosition(16 * index, 114)
 }
 game.showLongText("Please dont spam the waddle doo to rack up points", DialogLayout.Bottom)
+forever(function () {
+    music.playMelody("B G C5 A B C5 G F ", 240)
+})
 game.onUpdateInterval(500, function () {
     enemy_sprite = sprites.create(assets.image`Waddle dee`, SpriteKind.Enemy)
     enemy_sprite.setPosition(randint(0, 160), randint(0, 120))
